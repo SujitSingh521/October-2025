@@ -1,0 +1,1 @@
+One i make table  table in four filed one fil form make data store on mongodb using next and mongodb
