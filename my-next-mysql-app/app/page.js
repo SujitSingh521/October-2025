@@ -6,6 +6,7 @@ import UsersTable from "../components/UsersTable";
 
 export default function Home() {
   const [users, setUsers] = useState([]);
+  const [editingUser, setEditingUser] = useState(null);
 
   const fetchUsers = async () => {
     const res = await fetch("/api/get-users");
@@ -19,8 +20,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-start py-10 px-4">
-      <UserForm refreshUsers={fetchUsers} />
-      <UsersTable users={users} />
+      <UserForm refreshUsers={fetchUsers} editingUser={editingUser} setEditingUser={setEditingUser} />
+      <UsersTable users={users} refreshUsers={fetchUsers} setEditingUser={setEditingUser} />
     </div>
   );
 }

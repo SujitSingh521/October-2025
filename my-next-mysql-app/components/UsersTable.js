@@ -1,7 +1,26 @@
 "use client";
 
-export default function UsersTable({ users }) {
+export default function UsersTable({ users, refreshUsers, setEditingUser }) {
   const userList = Array.isArray(users) ? users : [];
+
+  const handleDelete = async (id) => {
+    if (!confirm("Are you sure you want to delete this user?")) return;
+
+    const res = await fetch("/api/delete-user", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id }),
+    });
+
+    const result = await res.json();
+
+    if (res.ok) {
+      alert("✅ " + result.message);
+      refreshUsers();
+    } else {
+      alert("❌ " + result.message);
+    }
+  };
 
   return (
     <div className="mt-10 w-full max-w-4xl overflow-x-auto shadow-2xl rounded-xl">
@@ -13,12 +32,13 @@ export default function UsersTable({ users }) {
             <th className="py-3 px-6 text-left font-semibold uppercase">Email</th>
             <th className="py-3 px-6 text-left font-semibold uppercase">Age</th>
             <th className="py-3 px-6 text-left font-semibold uppercase">City</th>
+            <th className="py-3 px-6 text-left font-semibold uppercase">Actions</th>
           </tr>
         </thead>
         <tbody className="bg-white divide-y divide-gray-200">
           {userList.length === 0 ? (
             <tr>
-              <td colSpan="5" className="text-center py-6 text-gray-500">
+              <td colSpan="6" className="text-center py-6 text-gray-500">
                 No users found.
               </td>
             </tr>
@@ -33,8 +53,22 @@ export default function UsersTable({ users }) {
                 <td className="py-3 px-6">{user.id}</td>
                 <td className="py-3 px-6 font-medium text-gray-700">{user.name}</td>
                 <td className="py-3 px-6 text-gray-600">{user.email}</td>
-                <td className="py-3 px-6">{user.age}</td>
-                <td className="py-3 px-6">{user.city}</td>
+                <td className="py-3 px-6  text-gray-600">{user.age}</td>
+                <td className="py-3 px-6  text-gray-600">{user.city}</td>
+                <td className="py-3 px-6  text-gray-600 space-x-2">
+                  <button
+                    onClick={() => setEditingUser(user)}
+                    className="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded-md shadow"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    onClick={() => handleDelete(user.id)}
+                    className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-md shadow"
+                  >
+                    Delete
+                  </button>
+                </td>
               </tr>
             ))
           )}
