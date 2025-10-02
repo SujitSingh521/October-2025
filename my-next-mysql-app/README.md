@@ -1,7 +1,6 @@
 # October-2025
 tenacious techies
 
-
 <!-- ====================================================================================== -->
 
 # 🧑‍💻 Full Stack User Management App (Next.js + MySQL)
