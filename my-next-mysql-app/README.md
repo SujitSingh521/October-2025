@@ -6,20 +6,21 @@ tenacious techies
 
 # 🧑‍💻 Full Stack User Management App (Next.js + MySQL)
 
-This is a full-stack web application that allows users to submit their information (name, email, age, city) through a form. The data is stored in a MySQL database and displayed in a responsive table. Built using **Next.js (React)**, **MySQL**, and **Tailwind CSS**.
+This is a full-stack web application that allows users to add, update, delete, and view their information (name, email, age, city). The data is stored in a MySQL database and displayed in a responsive table. Built using Next.js (React), MySQL, and Tailwind CSS.
+
 
 ---
 
 ## 🚀 Features
 
-- ✅ Add user information via a form
-- ✅ Store data in MySQL using API routes
-- ✅ Display users in a table with real-time updates
-- ✅ View and verify data in MySQL Workbench
-- ✅ Clean UI with Tailwind CSS
-- ✅ Full stack flow: **Form → API → MySQL → UI**
+- ✅ Add user information via a form  
+- ✅ Store data in MySQL using Next.js API routes  
+- ✅ Display users in a table with real-time updates  
+- ✅ Edit and delete users  
+- ✅ View and verify data in MySQL Workbench  
+- ✅ Responsive UI with Tailwind CSS  
+- ✅ Full stack flow: **Form → API → MySQL → UI**  
 
----
 
 ## 📷 Screenshots
 
@@ -47,7 +48,7 @@ This is a full-stack web application that allows users to submit their informati
 
 my-next-mysql-app/
 │── components/
-│   ├── UserForm.jsx        # User Add/Edit Form
+│   ├── UserForm.jsx        # Add/Edit User Form
 │   ├── UsersTable.jsx      # User Table
 │
 │── lib/
@@ -69,6 +70,7 @@ my-next-mysql-app/
 │── README.md
 │── tailwind.config.js
 │── globals.css
+
 
 
 ## ⚙️ Setup Instructions
