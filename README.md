@@ -25,7 +25,7 @@ This is a full-stack web application that allows users to submit their informati
 
 | Form | Users Table |
 |------|-------------|
-| ![Form Screenshot](./screenshots/form.png) | ![Table Screenshot](./screenshots/table.png) |
+| ![Form Screenshot](../images/Screenshot 2025.png) | ![Table Screenshot](./screenshots/table.png) |
 
 *(Add your screenshots in a `/screenshots` folder if needed)*
 
