@@ -45,21 +45,30 @@ This is a full-stack web application that allows users to submit their informati
 
 ## 📁 Project Structure
 
-```
-/pages
-  /api
-    add-user.js       # POST API to add a user
-    get-users.js      # GET API to fetch all users
-
-/components
-  UserForm.js         # React component for user input
-  UsersTable.js       # Table to display users
-
-/lib
-  db.js               # MySQL connection pool
-
-.env.local            # Environment variables
-```
+my-next-mysql-app/
+│── components/
+│   ├── UserForm.jsx        # User Add/Edit Form
+│   ├── UsersTable.jsx      # User Table
+│
+│── lib/
+│   └── db.js               # MySQL Database Connection Pool
+│
+│── pages/
+│   └── api/
+│       ├── add-user.js     # Add User API
+│       ├── delete-user.js  # Delete User API
+│       ├── get-users.js    # Get Users API
+│       ├── update-user.js  # Update User API
+│
+│── app/
+│   ├── layout.js           # Root Layout with Fonts
+│   └── page.js             # Home Page (Form + Table)
+│
+│── .env.local              # Environment Variables
+│── package.json
+│── README.md
+│── tailwind.config.js
+│── globals.css
 
 ---
 
