@@ -26,7 +26,7 @@ This is a full-stack web application that allows users to add, update, delete, a
 | Form | Users Table |
 |------|-------------|
 | ![Form Screenshot](./form.png) | ![Table Screenshot](./table.png) |
-| ![Form Screenshot](.form2.png) | ![Table Screenshot](./table2.png) |
+| ![Form Screenshot](./form2.png) | ![Table Screenshot](./table2.png) |
 
 
 *(Add your screenshots in a `/screenshots` folder if needed)*
