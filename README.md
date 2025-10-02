@@ -72,6 +72,10 @@ my-next-mysql-app/
 │── globals.css
 
 
+<<<<<<< HEAD
+=======
+---
+>>>>>>> 7dc237e3b2f8c2839e930a3410a94e16c5706178
 
 ## ⚙️ Setup Instructions
 
