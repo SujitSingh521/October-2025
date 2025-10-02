@@ -1,5 +1,7 @@
 # October-2025
 tenacious techies
+# October-2025
+tenacious techies
 
 
 <!-- ====================================================================================== -->
@@ -25,7 +27,9 @@ This is a full-stack web application that allows users to submit their informati
 
 | Form | Users Table |
 |------|-------------|
-| ![Form Screenshot](./form.png) | ![Table Screenshot](./table.png) |
+| ![Form Screenshot](./my-next-mysql-app/form.png) | ![Table Screenshot](./my-next-mysql-app/table.png) |
+| ![Form Screenshot](./my-next-mysql-app/form2.png) | ![Table Screenshot](./my-next-mysql-app/table2.png) |
+
 
 *(Add your screenshots in a `/screenshots` folder if needed)*
 
