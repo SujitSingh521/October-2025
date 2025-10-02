@@ -25,8 +25,8 @@ This is a full-stack web application that allows users to add, update, delete, a
 
 | Form | Users Table |
 |------|-------------|
-| ![Form Screenshot](./my-next-mysql-app/form.png) | ![Table Screenshot](./my-next-mysql-app/table.png) |
-| ![Form Screenshot](./my-next-mysql-app/form2.png) | ![Table Screenshot](./my-next-mysql-app/table2.png) |
+| ![Form Screenshot](./form.png) | ![Table Screenshot](./table.png) |
+| ![Form Screenshot](.form2.png) | ![Table Screenshot](./table2.png) |
 
 
 *(Add your screenshots in a `/screenshots` folder if needed)*
