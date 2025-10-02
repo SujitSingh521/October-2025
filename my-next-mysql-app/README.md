@@ -1,19 +1,29 @@
-<!-- ✅ MySQL Table Setup
+# My Next.js + MySQL User Management App
 
-Make sure you have this in your DB: -->
+A simple **Next.js** project connected with **MySQL** to manage users. You can add, view, and manage users dynamically using a frontend form and table. The database can also be accessed via **MySQL Workbench**.
 
-CREATE DATABASE IF NOT EXISTS myapp;
+---
 
-USE myapp;
+## ✅ Features
 
-CREATE TABLE users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100),
-  email VARCHAR(100),
-  age INT,
-  city VARCHAR(100)
-);
+- **MySQL Database** integration
+- Add new users with details: `name`, `email`, `age`, `city`
+- View all users in a dynamic table
+- API routes for database operations:
+  - `/api/add-user` → Insert new users
+  - `/api/get-users` → Fetch all users
+- Frontend components:
+  - **UserForm** → Submit new user details
+  - **UsersTable** → Display all users
+- Verified data flow from **form → MySQL → table**
+- **MySQL Workbench** GUI support for visual management
 
+---
 
+## 📦 Installation
 
-<!-- Chatgpt :- https://chatgpt.com/c/68dce5e9-0fe8-832c-8154-05d9d9e4a9d3 -->
+1. Clone the repository:
+
+```bash
+git clone https://github.com/SujitSingh521/October-2025/edit/main/my-next-mysql-app/
+cd my-next-mysql-app
