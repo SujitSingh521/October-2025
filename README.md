@@ -70,6 +70,7 @@ my-next-mysql-app/
 │── tailwind.config.js
 │── globals.css
 
+
 ---
 
 ## ⚙️ Setup Instructions
