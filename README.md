@@ -42,6 +42,7 @@ This is a full-stack web application that allows users to submit their informati
 ---
 
 ## 📁 Project Structure
+
 ```
 /pages
   /api
@@ -56,8 +57,7 @@ This is a full-stack web application that allows users to submit their informati
   db.js               # MySQL connection pool
 
 .env.local            # Environment variables
-
-
+```
 
 ---
 
@@ -68,26 +68,37 @@ This is a full-stack web application that allows users to submit their informati
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+```
 
+---
 
-2. Install Dependencies
+### 2. Install Dependencies
+
+```bash
 npm install
+```
 
+---
 
-3. Create .env.local File
-Create a .env.local file in the root of your project:
+### 3. Create `.env.local` File
 
+Create a `.env.local` file in the root of your project and add the following:
+
+```env
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_mysql_password
 DB_NAME=myapp
 DB_PORT=3306
+```
 
+---
 
+### 4. Set Up MySQL Database
 
-4. Set Up MySQL Database
-Open MySQL Workbench or CLI and run:
+Open **MySQL Workbench** or use CLI and run:
 
+```sql
 CREATE DATABASE IF NOT EXISTS myapp;
 
 USE myapp;
@@ -99,11 +110,18 @@ CREATE TABLE IF NOT EXISTS users (
   age INT NOT NULL,
   city VARCHAR(100) NOT NULL
 );
+```
 
+---
 
+### 5. Run the App
 
-5. Run the App
+```bash
 npm run dev
+```
 
+Then open your browser and go to:
 
-Open in browser: http://localhost:3000
+```
+http://localhost:3000
+```
